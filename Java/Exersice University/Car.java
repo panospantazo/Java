@@ -81,10 +81,10 @@ class Car extends Vehicle{
             needsMaintenance_setter(true);
             System.out.println("The car ("+model_getter()+") can't do another trips because needs maintenance (tripsSinceMaintenance = "+tripsSinceMaintenance_getter()+")\n");
         }
-        else{
-            isDriving = false;
+        else{
             tripsSinceMaintenance_setter(tripsSinceMaintenance_getter()+1);
         }
+        isDriving_setter(false);
     }
              
     
